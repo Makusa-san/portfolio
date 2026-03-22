@@ -1,1 +1,132 @@
-Starting Portfolio Project!
+<!DOCTYPE html>
+<html lang = "en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Maxim Strelets - Portfolio</title>
+        <link href = "main.css" rel = "stylesheet">
+    </head>
+
+    <body class = "style-guide-page"></body>
+        <header class = "style-guide-header">
+            <h1>Portfolio - Style Guide</h1>
+
+            <nav>
+                <a href = "#interactive-elements">Interactive Elements</a>  
+                <a href = "#text-elements">Text Elements</a>
+                <a href = "#combined-elements">Combined Elements</a>
+            </nav>
+
+        </header>
+
+        <!-- INTERACTIVE ELEMENTS SECTION -->
+        <section id = "interactive-elements">
+            <h2>Interactive Elements</h2>
+            <div class = "element">
+
+                <h3>In-text link</h3>
+                <h4>Sample code:</h4>
+                <code>&lt;p&gt;I want to see the &lt;a href = "#" class="text-link">project roadmap&lt;/a&gt; and explore other sections!&lt;/p&gt;</code>
+
+                <h4>Rendered element:</h4>
+                <p>I want to see the <a href="#" class = "text-link" >project roadmap</a> and explore other sections!</p>
+
+            </div>
+            
+            <div class="element">
+
+                <h3>Navigation Link</h3>
+                <h4>CSS selector:</h4>
+                <p>.button-nav</p>
+
+                <h4>Sample code:</h4>
+                <code>&lt;a href="#" class="button"&gt;my projects&lt;/a&gt;</code>
+
+                <h4>Rendered element:</h4>
+                <a class = "button-nav" href="#">my projects</a>
+
+            </div>
+
+            <div class="element">
+                <h3>View Project Buttons</h3>
+
+                <h4>Sample code:</h4>
+                <code>&lt;button class = "project-preview-button" type = "preview"&gt;View Project&lt;/button&gt;</code>
+        
+                <h4>Rendered element:</h4>
+                <button class = "project-preview-button" type = "preview">View Project</button>
+            </div>
+
+            <div class="element">
+                <h3>Image as a Link</h3>
+
+                <h4>Sample code:</h4>
+                <code>&lt;a href = "#" class = "image-link"&gt;&lt;img src = "img/maple-cake.jpg" alt="a piece of maple syrup flavor cake lying on a plate"&gt;&lt;/a&gt; </code>
+
+                <h4>Rendered element:</h4>
+                <a href = "#" class = "image-link"><img src = "img/maple-cake.jpg" alt="a piece of maple syrup flavor cake lying on a plate"></a>
+      </section>
+
+      <!-- TEXT ELEMENTS SECTION-->
+
+      <section id = "text-elements">
+        <h2>Text Elements</h2>
+
+            <div class="element">
+                <h3>Headings</h3>
+
+                <h4>Sample code:</h4>
+                <code> &lt;h2&gt;Heading Level 2&lt;/h2&gt; </code>
+                <code> &lt;h3&gt;Heading Level 3&lt;/h3&gt; </code> 
+                <code> &lt;h4&gt;Heading Level 4&lt;/h4&gt; </code> 
+                <code> &lt;h5&gt;Heading Level 5&lt;/h5&gt; </code> 
+
+                <h4>Rendered element:</h4>
+                <h2>Heading Level 2</h2>
+                <h3>Heading Level 3</h3>
+                <h4>Heading Level 4</h4>
+                <h5>Heading Level 5</h5>
+            </div>
+
+            <div class="element">
+                <h3>Paragraphs</h3>
+
+                <h4>Sample code:</h4>
+                code>&lt;p&gt;A responsive bakery website that showcases maple-themed products, allows users to browse items, view details, and place orders through an intuitive cart and checkout experience.&lt;/p&gt;</code>
+
+                <h4>Rendered element:</h4>
+                <p>A responsive bakery website that showcases maple-themed products, allows users to browse items, view details, and place orders through an intuitive cart and checkout experience.</p>
+            </div>
+      </section>
+
+      <!-- COMBINED ELEMENTS SECTION -->
+
+      <section id="combined_elements">
+        <h2>Combined Elements</h2>
+
+        <div class="element">
+            <h3>Main Navigation</h3>
+            <!--looked up for tag <pre> so long code examples can be more readable in style guide: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/pre-->
+            <h4>Sample Code:</h4>
+            <pre><code> 
+                &lt;nav class = "main-nav"&gt;
+                    &lt;a href = "#" class = "nav-link"&gt;work&lt;/a&gt;
+                    &lt;a href = "#" class = "nav-link"&gt;resume&lt;/a&gt;
+                    &lt;a href = "#" class = "nav-link"&gt;about&lt;/a&gt;
+                    &lt;a href = "#" class = "nav-link"&gt;contacts&lt;/a&gt;
+                &lt;/nav&gt;
+            </code></pre>
+
+            <h4>Rendered element:</h4>
+            <nav class="main-nav">
+                <div class = "main-nav">
+                    <a href="#" class="nav">work</a>
+                    <a href="#" class="nav">resume</a>
+                    <a href="#" class="nav">about</a>
+                    <a href="#" class="nav">contacts</a>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+</html>

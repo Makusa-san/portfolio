@@ -1,0 +1,196 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+
+code{
+  white-space: pre-wrap; /* used to ensure that code examples adjust to the page size, found here: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/white-space */
+  background-color: #EEE;
+  padding: 0.5rem;
+  display: block;
+}
+
+body {
+  font-family: 'Lato', serif;
+  background: #FDFBD4;
+  color: #38240D;
+  padding: 2rem;
+  margin: 0;
+}
+
+.style-guide-page header{
+  padding: 0;
+  margin-bottom: 2rem;
+  font-family: "Chonburi", serif;
+  /*display: flex;*/
+  /* flex-wrap: wrap;  used to adjust header elements placing: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/flex-wrap*/
+}
+
+.style-guide-header h1{
+    margin-left: 1rem;
+}
+
+.style-guide-page header nav {
+  display: flex;
+  flex-wrap: wrap;  /* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/flex-wrap*/
+  gap: 0.5rem;     
+  margin-left: 0.4rem;
+}
+
+.style-guide-header nav a{
+  font-family: "Space Mono", serif;
+  color: #38240D;
+  text-decoration: none;
+  transition: 0.2s;
+  padding: 0.75rem 0.5rem; 
+  border-radius: 4rem;
+  letter-spacing: 0.05em;
+}
+
+.style-guide-header nav a:hover {
+  background: #C05800;
+  color: #FDFBD4; 
+}
+
+.style-guide-header nav a:focus {
+  background: #713600; 
+  color: #FDFBD4; 
+}
+
+.element {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); /*used fror style and aestheitic: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/box-shadow */
+}
+
+
+h1{
+  font-family: 'Chonburi', cursive;
+  font-size: 2.5rem;
+  color: #330708;
+}
+
+h2 {
+  font-family: 'Space Mono', cursive;
+  margin-top: 6rem;
+  font-size: 2rem;
+}
+
+h3 {
+  font-family: 'Space Mono', cursive;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-family: 'Space Mono', cursive;
+  margin-bottom: 1.25rem;
+  font-size: 1.3rem;
+  font-weight: 300;
+
+}
+h5 {
+  font-family: 'Space Mono', cursive;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+p {
+  margin-top: 0;
+}
+
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* TEXT-LINK */
+
+.text-link {
+  color: #C05800;
+  transition: 0.2s;
+  text-decoration: underline;
+}
+
+.text-link:hover {
+  color: #e35336;
+}
+
+/* NAVIGATION BUTTON */
+
+.button-nav{
+  font-family: "Space Mono", serif;
+  color: #38240D;
+  text-decoration: none;
+  transition: 0.2s;
+  padding: 0.75rem 0.5rem; 
+  border-radius: 4rem;
+  letter-spacing: 0.05em;
+}
+
+.button-nav:hover{
+  background: #C05800;
+  color: #FDFBD4;  
+} 
+.button-nav:focus {
+  background: #713600; 
+  color: #FDFBD4; 
+}
+
+/* VIEW PROJECT BUTTON */
+
+.project-preview-button {
+  font-family: "Inter", serif;
+  border: none;
+  font-size: 1.2rem;
+  background: #C05800;
+  color: #FDFBD4;
+  padding: 1rem 3rem; 
+  border-radius: 1rem;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.project-preview-button:hover {
+  background: #713600;
+  color: #FDFBD4; 
+}
+
+.project-preview-button:focus {
+  background: #713600;
+  color: #FDFBD4;
+  transform: scale(1.04);
+}
+
+
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.image-wrapper img {
+  display: block;
+  width: 30em;
+  height: 20em;
+  outline: 2px solid #713600;
+  border-radius: 0.4rem;
+  transition: 0.2s;
+}
+
+.image-tag {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #713600;
+  color: #FDFBD4;
+  padding: 0.5rem 0.75rem;
+  border-bottom-left-radius: 1rem;
+  opacity: 0;
+  transition: 0.2s ease;
+}
+
+.image-wrapper:hover .image-tag {
+  opacity: 1;
+}

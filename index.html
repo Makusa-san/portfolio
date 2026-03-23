@@ -5,6 +5,10 @@
         <meta charset="utf-8">
         <title>Maxim Strelets - Portfolio</title>
         <link href = "main.css" rel = "stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">   
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Chonburi&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     </head>
 
     <body class = "style-guide-page"></body>
@@ -12,9 +16,10 @@
             <h1>Portfolio - Style Guide</h1>
 
             <nav>
-                <a href = "#interactive-elements">Interactive Elements</a>  
-                <a href = "#text-elements">Text Elements</a>
-                <a href = "#combined-elements">Combined Elements</a>
+                <a href = "#interactive-elements" class = "button-nav">Interactive Elements</a>  
+                <a href = "#text-elements" class = "button-nav">Text Elements</a>
+                <a href = "#combined-elements" class = "button-nav">Combined Elements</a>
+                 <a href = "#bio" class = "button-nav"> My Bio</a>
             </nav>
 
         </header>
@@ -54,17 +59,29 @@
                 <code>&lt;button class = "project-preview-button" type = "preview"&gt;View Project&lt;/button&gt;</code>
         
                 <h4>Rendered element:</h4>
-                <button class = "project-preview-button" type = "preview">View Project</button>
+                <button class = "project-preview-button" type = "button">View Project</button>
             </div>
 
             <div class="element">
                 <h3>Image as a Link</h3>
 
                 <h4>Sample code:</h4>
-                <code>&lt;a href = "#" class = "image-link"&gt;&lt;img src = "img/maple-cake.jpg" alt="a piece of maple syrup flavor cake lying on a plate"&gt;&lt;/a&gt; </code>
+                <code>
+                &lt;a href="#" class="image-link"&gt;
+                    &lt;div class="image-wrapper"&gt;
+                        &lt;img src="img/Mapastry_Project_mockup.jpeg" alt="a piece of maple syrup flavor cake lying on a plate"&gt;
+                        &lt;span class="image-tag"&gt;UI Design • Front-End • 2026&lt;/span&gt;
+                    &lt;/div&gt;
+                &lt;/a&gt;
+                </code>
 
                 <h4>Rendered element:</h4>
-                <a href = "#" class = "image-link"><img src = "img/maple-cake.jpg" alt="a piece of maple syrup flavor cake lying on a plate"></a>
+                <a href="#" class="image-link">
+                    <div class="image-wrapper">
+                        <img src="img/Mapastry_Project_mockup.jpeg" alt="a piece of maple syrup flavor cake lying on a plate">
+                        <span class="image-tag">UI Design • Front-End • 2026</span>
+                    </div>
+                </a>
       </section>
 
       <!-- TEXT ELEMENTS SECTION-->
@@ -92,7 +109,7 @@
                 <h3>Paragraphs</h3>
 
                 <h4>Sample code:</h4>
-                code>&lt;p&gt;A responsive bakery website that showcases maple-themed products, allows users to browse items, view details, and place orders through an intuitive cart and checkout experience.&lt;/p&gt;</code>
+                <code>&lt;p&gt;A responsive bakery website that showcases maple-themed products, allows users to browse items, view details, and place orders through an intuitive cart and checkout experience.&lt;/p&gt;</code>
 
                 <h4>Rendered element:</h4>
                 <p>A responsive bakery website that showcases maple-themed products, allows users to browse items, view details, and place orders through an intuitive cart and checkout experience.</p>
@@ -101,7 +118,7 @@
 
       <!-- COMBINED ELEMENTS SECTION -->
 
-      <section id="combined_elements">
+      <section id="combined-elements">
         <h2>Combined Elements</h2>
 
         <div class="element">
@@ -120,13 +137,19 @@
             <h4>Rendered element:</h4>
             <nav class="main-nav">
                 <div class = "main-nav">
-                    <a href="#" class="nav">work</a>
-                    <a href="#" class="nav">resume</a>
-                    <a href="#" class="nav">about</a>
-                    <a href="#" class="nav">contacts</a>
+                    <a href="#" class = "button-nav">work</a>
+                    <a href="#" class = "button-nav">resume</a>
+                    <a href="#" class = "button-nav">about</a>
+                    <a href="#" class = "button-nav">contacts</a>
                 </div>
             </nav>
         </div>
+    </section>
+
+    <!-- BIO -->
+
+    <section id = "bio">
+
     </section>
 
 </html>

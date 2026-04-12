@@ -10,8 +10,7 @@ p {
   margin-top: 0;
 }
  
- 
-/* TYPOGRAPHY */
+
  
 h1 {
   font-family: 'Chonburi', cursive;
@@ -183,13 +182,13 @@ code {
   background: #713600;
   color: #FDFBD4;
   padding: 0.5rem 0.75rem;
-  border-bottom-left-radius: 1rem;
+  border-bottom-left-radius: 1rem; /* found how to make round corners on the elements: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/border-bottom-left-radius */
   opacity: 0; /* changing the opacity of the element, found here: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/opacity */
   transition: 0.2s ease;
 }
  
 .image-wrapper:hover .image-tag {
-  opacity: 1;
+  opacity: 1; /* changing the opacity of the element, found here: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/opacity */
 }
  
  
@@ -486,7 +485,6 @@ code {
   margin-bottom: 1.5rem;
 }
  
-/* Full-width image grids */
 .project-images {
   display: grid;
   gap: 1rem;
@@ -517,7 +515,7 @@ code {
   aspect-ratio: auto;
   object-fit: contain;
 }
- 
+
 .project-images.three {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -530,85 +528,3 @@ code {
   grid-template-columns: repeat(2, 1fr);
 }
  
-/* About and Contact  */
-@media (max-width: 1100px) {
-  .about-page,
-  .contact-page {
-    padding: 2rem;
-  }
- 
-  .about-container,
-  .contact-container {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
- 
-  .about-divider,
-  .contact-divider {
-    display: none;
-  }
-}
- 
-/* Work page */
-@media (max-width: 56.25rem) {
-  .portfolio-website-header {
-    padding: 1.5rem;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-  }
- 
-  .main-nav {
-    width: 100%;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
- 
-  .portfolio-page {
-    padding: 1.5rem;
-  }
- 
-  .front-info {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    min-height: auto;
-    margin-top: 2rem;
-    margin-bottom: 3rem;
-  }
- 
-  .front-divider {
-    display: none;
-  }
- 
-  .project-row {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    margin-bottom: 3rem;
-  }
- 
-  .image-wrapper img {
-    width: 100%;
-    height: auto;
-  }
- 
-  /* Project detail page */
-  .project-page {
-    padding: 2rem 1.5rem 3rem;
-  }
- 
-  .project-name h1 {
-    font-size: 1.6rem;
-  }
- 
-  .project-meta {
-    gap: 1rem 1.5rem;
-  }
-
-  .project-images.one {
-    max-width: 100%;
-  }
- 
-  .project-images.three, .project-images.two, .project-images.four {
-    grid-template-columns: 1fr;
-  }
-}

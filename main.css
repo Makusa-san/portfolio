@@ -1,149 +1,145 @@
-/*
-  STYLE GUIDE STYLING 
-  Default styling for the style guide 
-*/
-
-code{
-  white-space: pre-wrap; /* used to ensure that code examples adjust to the page size, found here: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/white-space */
+body {
+  font-family: 'Lato', sans-serif;
+  background: #FDFBD4;
+  color: #38240D;
+  padding: 0;
+  margin: 0;
+}
+ 
+p {
+  margin-top: 0;
+}
+ 
+ 
+/* TYPOGRAPHY */
+ 
+h1 {
+  font-family: 'Chonburi', cursive;
+  font-size: 2.5rem;
+  color: #330708;
+}
+ 
+h2 {
+  font-family: 'Space Mono', monospace;
+  margin-top: 6rem;
+  font-size: 2rem;
+}
+ 
+h3 {
+  font-family: 'Space Mono', monospace;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+ 
+h4 {
+  font-family: 'Space Mono', monospace;
+  margin-bottom: 1.25rem;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+ 
+h5 {
+  font-family: 'Space Mono', monospace;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+ 
+ 
+/* STYLE GUIDE PAGE */
+ 
+.style-guide-page {
+  padding: 2rem;
+}
+ 
+.style-guide-page header {
+  padding: 0;
+  margin-bottom: 2rem;
+  font-family: "Chonburi", serif;
+}
+ 
+.style-guide-header h1 {
+  margin-left: 1rem;
+}
+ 
+.style-guide-page header nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-left: 0.4rem;
+}
+ 
+.style-guide-header nav a {
+  font-family: "Space Mono", monospace;
+  color: #38240D;
+  text-decoration: none;
+  transition: 0.2s;
+  padding: 0.75rem 0.5rem;
+  border-radius: 4rem;
+  letter-spacing: 0.05em;
+}
+ 
+.style-guide-header nav a:hover {
+  background: #C05800;
+  color: #FDFBD4;
+}
+ 
+.style-guide-header nav a:focus {
+  background: #713600;
+  color: #FDFBD4;
+}
+ 
+code {
+  white-space: pre-wrap; /* changed how text is placed inside container, found this here: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/white-space */
   background-color: #EEE;
   padding: 0.5rem;
   display: block;
 }
-
-body {
-  font-family: 'Lato', serif;
-  background: #FDFBD4;
-  color: #38240D;
-  padding: 2rem;
-  margin: 0;
-}
-
-.style-guide-page header{
-  padding: 0;
-  margin-bottom: 2rem;
-  font-family: "Chonburi", serif;
-  /*display: flex;*/
-  /* flex-wrap: wrap;  used to adjust header elements placing: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/flex-wrap*/
-}
-
-.style-guide-header h1{
-    margin-left: 1rem;
-}
-
-.style-guide-page header nav {
-  display: flex;
-  flex-wrap: wrap;  /* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/flex-wrap*/
-  gap: 0.5rem;     
-  margin-left: 0.4rem;
-}
-
-.style-guide-header nav a{
-  font-family: "Space Mono", serif;
-  color: #38240D;
-  text-decoration: none;
-  transition: 0.2s;
-  padding: 0.75rem 0.5rem; 
-  border-radius: 4rem;
-  letter-spacing: 0.05em;
-}
-
-.style-guide-header nav a:hover {
-  background: #C05800;
-  color: #FDFBD4; 
-}
-
-.style-guide-header nav a:focus {
-  background: #713600; 
-  color: #FDFBD4; 
-}
-
+ 
 .element {
   background: white;
   padding: 1.5rem;
   border-radius: 1rem;
   margin-bottom: 1.5rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08); /*used fror style and aestheitic: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/box-shadow */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
-
-
-h1{
-  font-family: 'Chonburi', cursive;
-  font-size: 2.5rem;
-  color: #330708;
-}
-
-h2 {
-  font-family: 'Space Mono', cursive;
-  margin-top: 6rem;
-  font-size: 2rem;
-}
-
-h3 {
-  font-family: 'Space Mono', cursive;
-  margin-top: 1rem;
-  font-size: 1.5rem;
-}
-
-h4 {
-  font-family: 'Space Mono', cursive;
-  margin-bottom: 1.25rem;
-  font-size: 1.3rem;
-  font-weight: 300;
-
-}
-h5 {
-  font-family: 'Space Mono', cursive;
-  margin-bottom: 1rem;
-  font-size: 1rem;
-}
-
-p {
-  margin-top: 0;
-}
-
-
-/* 
-  INTERACTIVE ELEMENTS -------------------
-*/
-
-/* TEXT-LINK */
-
+ 
+ 
+/* INTERACTIVE ELEMENTS */
+ 
 .text-link {
   color: #C05800;
   transition: 0.2s;
   text-decoration: underline;
 }
-
+ 
 .text-link:hover {
   color: #e35336;
 }
-
-/* NAVIGATION BUTTON */
-
-.button-nav{
-  font-family: "Space Mono", serif;
+ 
+.button-nav {
+  font-family: "Space Mono", monospace;
   color: #38240D;
   text-decoration: none;
   transition: 0.2s;
-  padding: 0.75rem 0.5rem; 
+  padding: 0.75rem 0.5rem;
   border-radius: 4rem;
   letter-spacing: 0.05em;
 }
-
-.button-nav:hover{
+ 
+.button-nav:hover {
   background: #C05800;
-  color: #FDFBD4;  
-} 
-.button-nav:focus {
-  background: #713600; 
-  color: #FDFBD4; 
+  color: #FDFBD4;
 }
-
-/* VIEW PROJECT BUTTON */
-
+ 
+.button-nav:focus {
+  background: #713600;
+  color: #FDFBD4;
+}
+ 
+/* View Project button */
 .project-preview-button {
   display: inline-block;
-  font-family: "Lato", serif;
+  font-family: "Lato", sans-serif;
   border: none;
   font-size: 1.2rem;
   background: #C05800;
@@ -155,24 +151,22 @@ p {
   white-space: nowrap;
   line-height: 1.2;
 }
-
+ 
 .project-preview-button:hover {
   background: #713600;
-  color: #FDFBD4; 
+  color: #FDFBD4;
 }
-
+ 
 .project-preview-button:focus {
   background: #713600;
   color: #FDFBD4;
   transform: scale(1.04);
 }
-
-
 .image-wrapper {
   position: relative;
   display: inline-block;
 }
-
+ 
 .image-wrapper img {
   display: block;
   width: 30em;
@@ -181,7 +175,7 @@ p {
   border-radius: 0.4rem;
   transition: 0.2s;
 }
-
+ 
 .image-tag {
   position: absolute;
   top: 0;
@@ -190,72 +184,38 @@ p {
   color: #FDFBD4;
   padding: 0.5rem 0.75rem;
   border-bottom-left-radius: 1rem;
-  opacity: 0;
+  opacity: 0; /* changing the opacity of the element, found here: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/opacity */
   transition: 0.2s ease;
 }
-
+ 
 .image-wrapper:hover .image-tag {
   opacity: 1;
 }
-
-
-/* 
-  PORTFOLIO WEBSITE -------------------
-*/
-
-
-/* PROJECTS PAGE */
-
-
-.portfolio-website-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.portfolio-website-header .main-nav {
-  display: flex;
-  gap: 4rem;
-}
-
-.portfolio-website-header .main-nav a {
-  font-family: "Space Mono", serif;
-  color: #38240D;
-  text-decoration: none;
-  transition: 0.2s;
-  padding: 0.75rem 0.5rem;
-  border-radius: 4rem;
-  letter-spacing: 0.05em;
-}
-
-.portfolio-website-header .main-nav a:hover {
-  background: #C05800;
-  color: #FDFBD4;
-}
-
-.portfolio-website-header .main-nav a:focus {
-  background: #713600;
-  color: #FDFBD4;
-}
-
-.portfolio-page {
-  max-width: 67.5rem;
-  margin: 0 auto;
-  padding: 2.5rem 5rem 4rem 5rem;
-}
-
+ 
+ 
+/* PORTFOLIO HEADER and NAV */
+ 
 .portfolio-website-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2rem 5rem 0 5rem;
 }
-
+ 
 .main-nav {
   display: flex;
   gap: 2rem;
 }
-
+ 
+ 
+/* WORK PAGE */
+ 
+.portfolio-page {
+  max-width: 67.5rem;
+  margin: 0 auto;
+  padding: 2.5rem 5rem 4rem 5rem;
+}
+ 
 .front-info {
   display: grid;
   grid-template-columns: 1.4fr 40px 1fr;
@@ -263,22 +223,20 @@ p {
   column-gap: 2.5rem;
   margin-top: 3rem;
   margin-bottom: 6rem;
-  min-height: 280px;
+  min-height: 17.5rem;
 }
-
-.front-left h2,
-.front-right h3,
-.project-info h3 {
+ 
+.front-left h2, .front-right h3, .project-info h3 {
   font-family: "Space Mono", monospace;
   color: #38240D;
   margin: 0;
 }
-
+ 
 .front-left h2 {
   font-size: 2.1rem;
   margin-bottom: 2rem;
 }
-
+ 
 .front-left p {
   font-family: "Lato", sans-serif;
   font-size: 1.1rem;
@@ -286,19 +244,19 @@ p {
   color: #9A5C2A;
   margin: 0;
 }
-
+ 
 .front-divider {
   width: 2px;
-  height: 285px;
+  height: 17.8rem;
   background: rgba(56, 36, 13, 0.18);
   justify-self: center;
 }
-
+ 
 .front-right h3 {
   font-size: 1.15rem;
   margin-bottom: 2.2rem;
 }
-
+ 
 .front-right p {
   font-family: "Lato", sans-serif;
   font-size: 0.95rem;
@@ -306,7 +264,7 @@ p {
   color: #9A5C2A;
   margin: 0;
 }
-
+ 
 .project-row {
   display: grid;
   grid-template-columns: 1.45fr 1fr;
@@ -314,75 +272,31 @@ p {
   gap: 4.5rem;
   margin-bottom: 6.5rem;
 }
-
-.project-image img {
-  display: block;
-  width: 100%;
-  max-width: 500px;
-  border: 2px solid #6D4A2E;
-  border-radius: 0.35rem;
-}
-
+ 
 .project-info h3 {
   font-size: 1.15rem;
   line-height: 1.45;
   margin-bottom: 2.25rem;
 }
-
+ 
 .project-info p {
   font-family: "Lato", sans-serif;
   font-size: 0.98rem;
-  line-height: 1.3;
+  line-height: 1.3; /* used to adjust the line height: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/line-height */
   color: #9A5C2A;
   margin: 0 0 2.2rem 0;
-  max-width: 360px;
+  max-width: 22.5rem;
 }
-
-@media (max-width: 56.25rem) {
-  .portfolio-page {
-    padding: 2rem;
-  }
-
-  .portfolio-website-header {
-    padding: 2rem 2rem 0 2rem;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1.5rem;
-  }
-
-  .front-info,
-  .project-row {
-    grid-template-columns: 1fr;
-  }
-
-  .front-divider {
-    display: none;
-  }
-
-  .front-info {
-    gap: 2rem;
-    min-height: auto;
-  }
-
-  .project-row {
-    gap: 2rem;
-    margin-bottom: 4rem;
-  }
-
-  .project-image img {
-    max-width: 100%;
-  }
-}
-
-
+ 
+ 
 /* ABOUT PAGE */
-
+ 
 .about-page {
   max-width: 67.5rem;
   margin: 0 auto;
   padding: 3rem 5rem;
 }
-
+ 
 .about-container {
   display: grid;
   grid-template-columns: 1fr 40px 2fr;
@@ -390,55 +304,38 @@ p {
   align-items: start;
   margin-top: 4rem;
 }
-
+ 
 .about-left h2 {
   font-family: "Space Mono", monospace;
   font-size: 1.8rem;
   margin: 0;
 }
-
+ 
 .about-divider {
   width: 2px;
   height: 100%;
   min-height: 18.75rem;
   background: rgba(56, 36, 13, 0.2);
 }
-
+ 
 .about-right p {
   font-family: "Lato", sans-serif;
   font-size: 1.05rem;
-  line-height: 1.5;
+  line-height: 1.5; /* used to adjust the line height: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/line-height */
   color: #9A5C2A;
   margin-bottom: 1.8rem;
   max-width: 32.5rem;
 }
-
-/* RESPONSIVE */
-
-@media (max-width: 1100px) {
-  .about-page {
-    padding: 2rem;
-  }
-
-  .about-container {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
-  .about-divider {
-    display: none;
-  }
-}
-
-
+ 
+ 
 /* CONTACT PAGE */
-
+ 
 .contact-page {
   max-width: 67.5rem;
   margin: 0 auto;
   padding: 3rem 5rem;
 }
-
+ 
 .contact-container {
   display: grid;
   grid-template-columns: 1fr 40px 2fr;
@@ -446,177 +343,263 @@ p {
   align-items: start;
   margin-top: 4rem;
 }
-
+ 
 .contact-left h2 {
   font-family: "Space Mono", monospace;
   font-size: 1.8rem;
   margin: 0;
 }
-
+ 
 .contact-divider {
   width: 2px;
   height: 100%;
   min-height: 13.75rem;
   background: rgba(56, 36, 13, 0.2);
 }
-
+ 
 .contact-right {
-  max-width: 520px;
+  max-width: 32.5rem;
 }
-
+ 
 .contact-intro {
   font-family: "Lato", sans-serif;
   font-size: 1.05rem;
-  line-height: 1.5;
+  line-height: 1.5; /* used to adjust the line height: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/line-height */
   color: #9A5C2A;
   margin-bottom: 2.5rem;
 }
-
-/* LINKS */
-
+ 
 .contact-info {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
-
+ 
 .contact-info p {
   font-family: "Lato", sans-serif;
   font-size: 1rem;
-  line-height: 1.4;
+  line-height: 1.4; /* used to adjust the line height: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/line-height */
   color: #38240D;
   margin: 0;
 }
-
+ 
 .contact-info span {
   font-family: "Space Mono", monospace;
   font-size: 0.9rem;
   color: #9A5C2A;
   letter-spacing: 0.05em;
 }
+ 
+ 
+/* PROJECT DETAIL PAGE */
+ 
+.project-page {
+  max-width: 67.5rem;
+  margin: 0 auto;
+  padding: 3rem 5rem 5rem;
+}
+ 
+.project-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: "Space Mono", monospace;
+  font-size: 0.9rem;
+  color: #C05800;
+  text-decoration: none;
+  transition: color 0.2s;
+  margin-bottom: 1.5rem;
+}
+ 
+.project-back:hover {
+  color: #713600;
+}
 
-/* RESPONSIVE */
+ 
+.project-hero {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+ 
+.project-hero h1 {
+  font-family: "Space Mono", monospace;
+  font-size: 2.2rem;
+  max-width: 43.75rem;
+  line-height: 1.35; /* used to adjust the line height: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/line-height */
+}
+ 
+/* Meta bar */
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2.5rem;
+  padding: 1.5rem 0;
+  margin-bottom: 3.5rem;
+  border-top: 2px solid rgba(56, 36, 13, 0.15);
+  border-bottom: 2px solid rgba(56, 36, 13, 0.15);
+}
+ 
+.project-meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+ 
+.project-meta-label {
+  font-family: "Space Mono", monospace;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #9A5C2A;
+}
+ 
+.project-meta-value {
+  font-family: "Lato", sans-serif;
+  font-size: 0.95rem;
+  color: #38240D;
+}
+ 
+/* Sections */
+.project-section {
+  margin-bottom: 4.5rem;
+}
+ 
+.project-section-heading {
+  font-family: "Space Mono", monospace;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #9A5C2A;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid rgba(56, 36, 13, 0.12);
+}
+ 
+.project-section-body {
+  max-width: 38rem;
+}
+ 
+.project-section-body p {
+  font-family: "Lato", sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #9A5C2A;
+  margin-bottom: 1.5rem;
+}
+ 
+/* Full-width image grids */
+.project-images {
+  display: grid;
+  gap: 1rem;
+  margin: 2.5rem 0 3rem;
+}
+ 
+.project-images img {
+  width: 100%;
+  display: block;
+  border-radius: 0.35rem;
+  border: 2px solid rgba(109, 74, 46, 0.25);
+  aspect-ratio: 15 / 10; /* found here how to edit image by size: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/aspect-ratio */
+  object-fit: cover; /* used to make images the same size: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/object-fit */
+}
 
+.project-images.one {
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+ 
+.project-images.three {
+  grid-template-columns: repeat(2, 1fr);
+}
+ 
+.project-images.two {
+  grid-template-columns: repeat(2, 1fr);
+}
+ 
+.project-images.four {
+  grid-template-columns: repeat(2, 1fr);
+}
+ 
+/* About and Contact  */
 @media (max-width: 1100px) {
+  .about-page,
   .contact-page {
     padding: 2rem;
   }
-
+ 
+  .about-container,
   .contact-container {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-
+ 
+  .about-divider,
   .contact-divider {
     display: none;
   }
 }
-
-/* TO DYE FOR PROJECT PAGE */
-
-/* PROJECT PAGE */
-
-.project-page {
-  max-width: 67.5rem;
-  margin: 0 auto;
-  padding: 3rem 5rem;
-}
-
-/* HERO */
-
-.project-hero {
-  margin-top: 3rem;
-  margin-bottom: 5rem;
-}
-
-.project-label {
-  font-family: "Space Mono", monospace;
-  font-size: 0.9rem;
-  color: #9A5C2A;
-  margin-bottom: 1rem;
-}
-
-.project-hero h1 {
-  font-family: "Space Mono", monospace;
-  font-size: 2.2rem;
-  max-width: 700px;
-}
-
-/* SECTIONS */
-
-.project-section {
-  display: grid;
-  grid-template-columns: 1fr 40px 2fr;
-  column-gap: 2.5rem;
-  margin-bottom: 4rem;
-}
-
-.project-left h2 {
-  font-family: "Space Mono", monospace;
-  font-size: 1.4rem;
-}
-
-.project-divider {
-  width: 2px;
-  background: rgba(56, 36, 13, 0.2);
-}
-
-.project-right p {
-  font-family: "Lato", sans-serif;
-  font-size: 1.05rem;
-  line-height: 1.5;
-  color: #9A5C2A;
-  margin-bottom: 1.5rem;
-  max-width: 32.5rem;
-}
-
-/* IMAGES */
-
-.project-images {
-  display: grid;
-  gap: 1.2rem;
-  margin: 2rem 0 3rem;
-  grid-column: span 2;
-  /* looked up here how to break the content in styling purpose: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/span */
-}
-
-.project-images img {
-  width: 100%;
-  border-radius: 0.3rem;
-}
-
-.project-images.three {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.project-images.two {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.project-images.four {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-/* MOBILE */
-
-@media (max-width: 56.25px) {
-  .project-page {
-    padding: 2rem;
+ 
+/* Work page */
+@media (max-width: 56.25rem) {
+  .portfolio-website-header {
+    padding: 1.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
   }
-
-  .project-section {
+ 
+  .main-nav {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+ 
+  .portfolio-page {
+    padding: 1.5rem;
+  }
+ 
+  .front-info {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+    min-height: auto;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
   }
-
-  .project-divider {
+ 
+  .front-divider {
     display: none;
   }
+ 
+  .project-row {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+ 
+  .image-wrapper img {
+    width: 100%;
+    height: auto;
+  }
+ 
+  /* Project detail page */
+  .project-page {
+    padding: 2rem 1.5rem 3rem;
+  }
+ 
+  .project-hero h1 {
+    font-size: 1.6rem;
+  }
+ 
+  .project-meta {
+    gap: 1rem 1.5rem;
+  }
 
-  .project-images.three,
-  .project-images.two,
-  .project-images.four {
+  .project-images.one {
+    max-width: 100%;
+  }
+ 
+  .project-images.three, .project-images.two, .project-images.four {
     grid-template-columns: 1fr;
   }
 }
-
-

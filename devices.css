@@ -71,12 +71,17 @@
   .project-meta {
     gap: 1rem 1.5rem;
   }
-
+ 
   .project-images.one {
     max-width: 100%;
   }
  
   .project-images.three, .project-images.two, .project-images.four {
     grid-template-columns: 1fr;
+  }
+ 
+  /* Browser mockups responsive */
+  .hero-strip .mockup-wrapper {
+    width: 85vw;
   }
 }

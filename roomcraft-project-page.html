@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoomCraft — Project</title>
+
+    <link href="main.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chonburi&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="portfolio-website-header">
+        <h1>Strelets M.</h1>
+
+        <nav class="main-nav">
+            <a href="index.html" class="button-nav">work</a>
+            <a href="img/Resume_Maxim_Strelets.pdf" class="button-nav">resume</a>
+            <a href="about-me.html" class="button-nav">about</a>
+            <a href="contacts.html" class="button-nav">contacts</a>
+        </nav>
+    </header>
+
+    <main class="project-page">
+
+        <!-- BACK LINK -->
+        <a href="index.html" class="project-back">← Back to Work</a>
+
+        <!-- HERO -->
+        <section class="project-name">
+            <h1>RoomCraft — 3D Room Planning Tool</h1>
+        </section>
+
+        <!-- META BAR -->
+        <div class="project-meta">
+            <div class="project-meta-item">
+                <span class="project-meta-label">Role</span>
+                <span class="project-meta-value">UI/UX Designer</span>
+            </div>
+            <div class="project-meta-item">
+                <span class="project-meta-label">Tools</span>
+                <span class="project-meta-value">Figma</span>
+            </div>
+            <div class="project-meta-item">
+                <span class="project-meta-label">Type</span>
+                <span class="project-meta-value">Web Application, StormForge 2026</span>
+            </div>
+            <div class="project-meta-item">
+                <span class="project-meta-label">Date</span>
+                <span class="project-meta-value">Feb – Apr 2026</span>
+            </div>
+            <div class="project-meta-item">
+                <span class="project-meta-label">Recognition</span>
+                <span class="project-meta-value">Surge Choice Award</span>
+            </div>
+        </div>
+
+
+        <!-- INTRO -->
+        <section class="project-section">
+            <h2 class="project-section-heading">Intro</h2>
+
+            <div class="project-section-body">
+                <p>
+                    RoomCraft is a web-based 2D and 3D room planning tool built during
+                    SFU Surge's StormForge 2026 program. It lets users sketch or trace
+                    a room, import real furniture products, preview them in 3D, and
+                    experiment with AI-assisted layout optimization. The project won the
+                    Surge Choice Award for its approach to making interior design more
+                    accessible and intuitive.
+                </p>
+            </div>
+
+            <!--
+                VIDEO: Demo walkthrough of RoomCraft.
+                Place the video file as "img/RoomCraft.mp4" or update the src below.
+                If you prefer YouTube, replace the <video> with an <iframe>:
+
+                <div class="project-video">
+                    <iframe width="100%" height="450" src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                        frameborder="0" allowfullscreen
+                        style="border-radius: 0.35rem; border: 2px solid rgba(109,74,46,0.25);">
+                    </iframe>
+                </div>
+            -->
+            <div class="project-video">
+                <video controls preload="metadata" poster="img/roomcraft-poster.png">
+                    <source src="img/RoomCraft.mp4" type="video/mp4">
+                    Your browser does not support the video element.
+                </video>
+            </div>
+        </section>
+
+
+        <!-- PROBLEM & CONTEXT -->
+        <section class="project-section">
+            <h2 class="project-section-heading">Problem & Context</h2>
+
+            <div class="project-section-body">
+                <p>
+                    Designing a room layout is a time-consuming process. Most people
+                    struggle to visualize how furniture will fit and look in their space
+                    before committing to purchases. Existing tools are often complex,
+                    aimed at professionals, or lack the ability to work with real products.
+                </p>
+                <p>
+                    RoomCraft was built to bridge that gap — giving everyday users a way
+                    to quickly sketch their room, drop in real furniture from retailers
+                    like IKEA, and see the result in 3D, all within the browser.
+                </p>
+            </div>
+        </section>
+
+
+        <!-- DESIGN PROCESS -->
+        <section class="project-section">
+            <h2 class="project-section-heading">Design Process</h2>
+
+            <div class="project-section-body">
+                <p>
+                    My focus was on designing the interface that ties together a complex
+                    set of features — 2D room drawing, 3D preview, product catalog,
+                    and AI tools — into a workflow that feels approachable. The challenge
+                    was keeping the UI clean while giving users access to powerful
+                    functionality without overwhelming them.
+                </p>
+            </div>
+
+            <!--
+                IMAGE SUGGESTION: Figma wireframes or early UI explorations.
+                Show how you structured the interface — toolbar placement,
+                panel layout, the 2D/3D toggle, etc.
+            -->
+            <div class="project-images two">
+                <img src="img/roomcraft-design-1.png" alt="Early wireframe exploration for RoomCraft interface">
+                <img src="img/roomcraft-design-2.png" alt="UI layout iteration for RoomCraft editor">
+            </div>
+
+            <div class="project-section-body">
+                <p>
+                    I designed the bottom toolbar to group core actions — Select, Move,
+                    Rotate, AI, 2D, and 3D — in a single persistent bar, keeping the
+                    main canvas uncluttered. The product catalog lives in a collapsible
+                    side panel, and contextual controls like wall dimensions and item
+                    properties appear only when relevant.
+                </p>
+            </div>
+
+            <!--
+                IMAGE SUGGESTION: Screenshots of the final toolbar, side panel,
+                and contextual controls. A 2-up showing the 2D view and 3D view
+                side by side would work well here.
+            -->
+            <div class="project-images two">
+                <img src="img/roomcraft-2d-view.png" alt="RoomCraft 2D editor view with room layout">
+                <img src="img/roomcraft-3d-view.png" alt="RoomCraft 3D preview with furniture placed">
+            </div>
+        </section>
+
+
+        <!-- KEY FEATURES -->
+        <section class="project-section">
+            <h2 class="project-section-heading">Key Features</h2>
+
+            <div class="project-section-body">
+                <p>
+                    The 2D editor supports drawing walls, adjusting corners, calibrating
+                    dimensions, and tracing from an uploaded floor plan image using AI.
+                    Users can import furniture by pasting a product URL, which pulls the
+                    3D model and metadata automatically.
+                </p>
+                <p>
+                    The 3D editor renders the room with walls, floors, and placed
+                    furniture in real time. Users can move, rotate, and arrange items
+                    with collision detection. An AI-powered "Themeify" feature lets users
+                    describe a room style in plain text and generates a matching furniture
+                    layout, while a genetic algorithm can optimize placement for the
+                    best spatial arrangement.
+                </p>
+            </div>
+
+            <!--
+                IMAGE SUGGESTION: Screenshots highlighting specific features.
+                Great candidates from the video:
+                - The "Import 3D Model" dialog with the IKEA URL
+                - The "Themeify a room" dialog with the prompt and options
+                - The genetic algorithm finding the best layout
+                - The product catalog sidebar with furniture thumbnails
+
+                A 2x2 grid (class="four") would work well to showcase
+                multiple features at once.
+            -->
+            <div class="project-images four">
+                <img src="img/roomcraft-import.png" alt="Import 3D Model dialog with product URL input">
+                <img src="img/roomcraft-themeify.png" alt="Themeify dialog for AI-generated room styling">
+                <img src="img/roomcraft-catalog.png" alt="Product catalog sidebar with furniture items">
+                <img src="img/roomcraft-genetic.png" alt="Genetic algorithm optimizing furniture layout">
+            </div>
+        </section>
+
+
+        <!-- MY CONTRIBUTION -->
+        <section class="project-section">
+            <h2 class="project-section-heading">My Contribution</h2>
+
+            <div class="project-section-body">
+                <p>
+                    As the UI/UX designer on the team, I was responsible for the overall
+                    interface design and user experience. This included designing the
+                    layout and visual hierarchy of the editor, the toolbar and panel
+                    system, modal dialogs for product import and AI features, and ensuring
+                    the transition between 2D and 3D views felt seamless.
+                </p>
+                <p>
+                    I created high-fidelity mockups in Figma and worked closely with the
+                    development team to ensure the designs translated accurately into the
+                    final application. The project was built with React, Three.js, and
+                    FastAPI on the backend, with AI features powered by Google Gemini
+                    through Vertex AI.
+                </p>
+            </div>
+
+            <!--
+                IMAGE SUGGESTION (optional): A Figma screenshot showing your
+                design file — component library, screen flows, etc.
+                Use class="one" for a single centered image.
+
+                <div class="project-images one">
+                    <img src="img/roomcraft-figma.png" alt="Figma design file for RoomCraft">
+                </div>
+            -->
+        </section>
+
+
+        <!-- REFLECTION -->
+        <section class="project-section">
+            <h2 class="project-section-heading">Reflection</h2>
+
+            <div class="project-section-body">
+                <p>
+                    RoomCraft was a significant step in my growth as a designer. Working
+                    within a team on a technically complex product pushed me to think
+                    carefully about how to simplify advanced functionality without
+                    hiding it. Designing for a 3D tool in the browser presented unique
+                    challenges around spatial controls, mode switching, and information
+                    density.
+                </p>
+                <p>
+                    Winning the Surge Choice Award was a meaningful validation that
+                    thoughtful UI/UX design can make a real difference in how people
+                    experience a product, even in a technically driven project. If I were
+                    to continue working on RoomCraft, I would focus on user testing to
+                    refine the onboarding experience and explore mobile responsiveness
+                    for the editor.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>

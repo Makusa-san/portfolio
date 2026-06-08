@@ -1,3 +1,4 @@
+
 body {
   font-family: 'Lato', sans-serif;
   background: #FDFBD4;
@@ -6,15 +7,16 @@ body {
   margin: 0;
 }
  
+ 
 p {
   margin-top: 0;
 }
  
-
+ 
  
 h1 {
   font-family: 'Chonburi', cursive;
-  font-size: 2.5rem;
+  font-size: 2.1rem;
   color: #330708;
 }
  
@@ -85,6 +87,23 @@ h5 {
 .style-guide-header nav a:focus {
   background: #713600;
   color: #FDFBD4;
+}
+ 
+.style-guide-link {
+  display: block;
+  text-align: center;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.85rem;
+  color: #9A5C2A;
+  text-decoration: none;
+  margin-top: 1rem;
+  letter-spacing: 0.03em;
+  transition: color 0.2s;
+}
+ 
+.style-guide-link:hover {
+  color: #C05800;
+  text-decoration: underline;
 }
  
 code {
@@ -413,7 +432,7 @@ code {
 .project-back:hover {
   color: #713600;
 }
-
+ 
  
 .project-name {
   margin-top: 3rem;
@@ -499,7 +518,7 @@ code {
   aspect-ratio: 15 / 10; /* found here how to edit image by size: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/aspect-ratio */
   object-fit: cover; /* used to make images the same size: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/object-fit */
 }
-
+ 
 .project-images.one {
   max-width: 75%;
   margin-left: auto;
@@ -510,12 +529,12 @@ code {
   aspect-ratio: auto;
   object-fit: contain;
 }
-
+ 
 .project-images.no-crop img {
   aspect-ratio: auto;
   object-fit: contain;
 }
-
+ 
 .project-images.three {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -527,4 +546,224 @@ code {
 .project-images.four {
   grid-template-columns: repeat(2, 1fr);
 }
+ /* Video Display Styling */
  
+ /* Video embed */
+.project-video {
+  margin: 2.5rem 0 3rem;
+}
+ 
+.project-video video {
+  width: 100%;
+  display: block;
+  border-radius: 0.35rem;
+  border: 2px solid rgba(109, 74, 46, 0.25);
+}
+ 
+/* BROWSER MOCKUP COMPONENTS */
+ 
+.browser-mockup {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(56, 36, 13, 0.1), 0 2px 6px rgba(56, 36, 13, 0.06);
+  background: #f9f5ec;
+  border: 1px solid rgba(109, 74, 46, 0.2);
+}
+ 
+.browser-bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0.6rem 0.85rem;
+  background: #f0ebe0;
+  border-bottom: 1px solid rgba(109, 74, 46, 0.15);
+}
+ 
+.browser-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.browser-dot.red { background: #ff5f57; }
+.browser-dot.yellow { background: #ffbd2e; }
+.browser-dot.green { background: #28c840; }
+ 
+.browser-url {
+  margin-left: 0.75rem;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.68rem;
+  color: #9A5C2A;
+  background: #FDFBD4;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  flex: 1;
+  border: 1px solid rgba(109, 74, 46, 0.15);
+}
+ 
+.browser-content {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+ 
+.browser-content img {
+  width: 100%;
+  display: block;
+}
+ 
+.browser-content.cropped {
+  aspect-ratio: 16 / 9;
+}
+ 
+.browser-content.cropped img {
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+ 
+.browser-content.cropped.offset-down img {
+  object-position: center 20%;
+}
+ 
+.browser-content.cropped::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 20%;
+  background: linear-gradient(to bottom, transparent, #f9f5ec);
+  pointer-events: none;
+}
+ 
+/* Hero strip - scrollable row after intro */
+.hero-strip-container {
+  position: relative;
+  margin: 2.5rem 0 1rem;
+}
+ 
+.hero-strip {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  overflow-x: auto;
+  padding-bottom: 1.25rem;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+ 
+.hero-strip::-webkit-scrollbar {
+  display: none;
+}
+ 
+.hero-strip-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-70%);
+  z-index: 2;
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  border: none;
+  background: #9A5C2A;
+  color: #FDFBD4;
+  font-family: 'Space Mono', monospace;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, opacity 0.2s;
+  box-shadow: 0 2px 8px rgba(56, 36, 13, 0.15);
+}
+ 
+.hero-strip-arrow:hover {
+  background: #713600;
+}
+ 
+.hero-strip-arrow-left {
+  left: -1.2rem;
+}
+ 
+.hero-strip-arrow-right {
+  right: -1.2rem;
+}
+ 
+.hero-strip .mockup-wrapper {
+  flex-shrink: 0;
+  width: 42rem;
+}
+ 
+.hero-strip .browser-mockup {
+  width: 100%;
+}
+ 
+.mockup-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  color: #9A5C2A;
+  margin-top: 0.75rem;
+  text-align: center;
+}
+ 
+/* Final design - large individual mockups */
+.final-design-mockups {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  margin-top: 2.5rem;
+}
+ 
+.mockup-wrapper-large {
+  width: 100%;
+}
+ 
+.mockup-wrapper-large .browser-mockup {
+  width: 100%;
+}
+ 
+.mockup-caption {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #9A5C2A;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+ 
+.project-images.process-img {
+  display: block;
+  max-width: 100%;
+  margin: 2.5rem auto 3rem;
+}
+ 
+.project-images.process-img img {
+  width: auto;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  border: 2px solid rgba(109, 74, 46, 0.25);
+  border-radius: 0.35rem;
+}
+/* Toggle button for Final Design */
+.toggle-mockups {
+  display: block;
+  margin: 1.5rem 0;
+  padding: 0.75rem 1.5rem;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+  color: #FDFBD4;
+  background: #9A5C2A;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+ 
+.toggle-mockups:hover {
+  background: #713600;
+}

@@ -1,40 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
+ 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Dye For — Project</title>
-
+    <title>MaPastry — Project</title>
+ 
     <link href="main.css" rel="stylesheet">
     <link href = "devices.css" rel = "stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Chonburi&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
-
+ 
 <body class="portfolio-page-body">
-
+ 
     <header class="portfolio-website-header">
         <h1>Strelets M.</h1>
-
+ 
         <nav class="main-nav">
             <a href="index.html" class = "button-nav">work</a>
-            <a href="img/Resume_MaximStrelets.pdf" class = "button-nav">resume</a>
+            <a href="img/Resume_Maxim_Strelets.pdf" class = "button-nav">resume</a>
             <a href="about-me.html" class = "button-nav">about</a>
             <a href="contacts.html" class = "button-nav">contacts</a>
-            <a href="style-guide.html" class = "button-nav">style guide</a>
         </nav>
     </header>
-
+ 
     <div class="project-page">
-
-        <a href="work.html" class="project-back">← Back to Work</a>
-
+ 
+        <a href="index.html" class="project-back">← Back to Work</a>
+ 
         <div class="project-name">
             <h1>MaPastry — Bakery Website</h1>
         </div>
-
+ 
         <div class="project-meta">
             <div class="project-meta-item">
                 <span class="project-meta-label">Role</span>
@@ -53,125 +52,318 @@
                 <span class="project-meta-value">Feb - Mar 2026</span>
             </div>
         </div>
-
+ 
         <section class="project-section">
             <h2 class="project-section-heading">Intro</h2>
-
+ 
             <div class="project-section-body">
                 <p>
-                    The goal of this project was to design a website for MaPastry, an imaginary
-                    Canadian bakery that uses maple syrup as its signature element to represent
-                    national food culture. The intention was to create a digital experience that
-                    feels warm, inviting, and culturally grounded, while remaining clear and easy
-                    to navigate for both local and international audiences.
+                    MaPastry is a concept website for a Canadian bakery where maple syrup is the signature ingredient across the menu.
+                    I designed and coded the full website in HTML and CSS, focusing on making the brand feel welcoming and handcrafted while keeping the shopping and browsing experience simple and clear.
                 </p>
             </div>
-
-
-            <div class="project-images one">
-                <img src="img/Mapastry-Landing.png" alt="MaPastry bakery website landing page">
+ 
+            <div class="hero-strip-container">
+                <button class="hero-strip-arrow hero-strip-arrow-left" aria-label="Scroll left">←</button>
+                <button class="hero-strip-arrow hero-strip-arrow-right" aria-label="Scroll right">→</button>
+ 
+                <div class="hero-strip" id="heroStrip">
+                    <div class="mockup-wrapper">
+                        <div class="browser-mockup">
+                            <div class="browser-bar">
+                                <div class="browser-dot red"></div>
+                                <div class="browser-dot yellow"></div>
+                                <div class="browser-dot green"></div>
+                                <div class="browser-url">mapastry.ca</div>
+                            </div>
+                            <div class="browser-content cropped">
+                                <img src="img/Mapastry-Landing.png" alt="MaPastry Homepage">
+                            </div>
+                        </div>
+                        <div class="mockup-label">Homepage</div>
+                    </div>
+ 
+                    <div class="mockup-wrapper">
+                        <div class="browser-mockup">
+                            <div class="browser-bar">
+                                <div class="browser-dot red"></div>
+                                <div class="browser-dot yellow"></div>
+                                <div class="browser-dot green"></div>
+                                <div class="browser-url">mapastry.ca/menu</div>
+                            </div>
+                            <div class="browser-content cropped">
+                                <img src="img/Mapastry-ProductListing.png" alt="MaPastry Menu">
+                            </div>
+                        </div>
+                        <div class="mockup-label">Menu</div>
+                    </div>
+ 
+                    <div class="mockup-wrapper">
+                        <div class="browser-mockup">
+                            <div class="browser-bar">
+                                <div class="browser-dot red"></div>
+                                <div class="browser-dot yellow"></div>
+                                <div class="browser-dot green"></div>
+                                <div class="browser-url">mapastry.ca/about</div>
+                            </div>
+                            <div class="browser-content cropped">
+                                <img src="img/Mapastry_aboutUs.png" alt="MaPastry About">
+                            </div>
+                        </div>
+                        <div class="mockup-label">About Us</div>
+                    </div>
+ 
+                    <div class="mockup-wrapper">
+                        <div class="browser-mockup">
+                            <div class="browser-bar">
+                                <div class="browser-dot red"></div>
+                                <div class="browser-dot yellow"></div>
+                                <div class="browser-dot green"></div>
+                                <div class="browser-url">mapastry.ca/contact</div>
+                            </div>
+                            <div class="browser-content cropped offset-down">
+                                <img src="img/Mapastry-Contacts.png" alt="MaPastry Contact">
+                            </div>
+                        </div>
+                        <div class="mockup-label">Contact & Feedback</div>
+                    </div>
+ 
+                    <div class="mockup-wrapper">
+                        <div class="browser-mockup">
+                            <div class="browser-bar">
+                                <div class="browser-dot red"></div>
+                                <div class="browser-dot yellow"></div>
+                                <div class="browser-dot green"></div>
+                                <div class="browser-url">mapastry.ca/cart</div>
+                            </div>
+                            <div class="browser-content cropped offset-down">
+                                <img src="img/Mapastry-Cart.png" alt="MaPastry Cart">
+                            </div>
+                        </div>
+                        <div class="mockup-label">Cart & Checkout</div>
+                    </div>
+                </div>
             </div>
+ 
+            <script>
+                (function() {
+                    const strip = document.getElementById('heroStrip');
+                    const leftBtn = document.querySelector('.hero-strip-arrow-left');
+                    const rightBtn = document.querySelector('.hero-strip-arrow-right');
+                    const scrollAmount = strip.querySelector('.mockup-wrapper').offsetWidth + 24;
+ 
+                    function updateArrows() {
+                        leftBtn.style.opacity = strip.scrollLeft <= 10 ? '0.3' : '1';
+                        leftBtn.style.pointerEvents = strip.scrollLeft <= 10 ? 'none' : 'auto';
+                        const maxScroll = strip.scrollWidth - strip.clientWidth;
+                        rightBtn.style.opacity = strip.scrollLeft >= maxScroll - 10 ? '0.3' : '1';
+                        rightBtn.style.pointerEvents = strip.scrollLeft >= maxScroll - 10 ? 'none' : 'auto';
+                    }
+ 
+                    leftBtn.addEventListener('click', function() {
+                        strip.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+                    });
+ 
+                    rightBtn.addEventListener('click', function() {
+                        strip.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+                    });
+ 
+                    strip.addEventListener('scroll', updateArrows);
+                    updateArrows();
+                })();
+            </script>
         </section>
-
+ 
+                <section class="project-section">
+            <h2 class="project-section-heading">Design System</h2>
+ 
+            <div class="project-section-body">
+                <p>
+                    I built the brand identity around the bakery's core ingredient. The color palette is built with warm tones inspired by maple syrup, baked pastry, and natural materials. My goal was to create a color palette that feels edible and creates an inviting atmosphere around the brand.
+                </p>
+                <p>
+                    I paired two fonts: Arima Madurai for headings with Charis SIL for body text: one expressive and rounded, bringing warmth and character, while the other is clean and easy to scan.
+                </p>
+            </div>
+ 
+            <div class="project-images one">
+                <img src="img/MaPastry_PaletteFonts.png" alt="Warm earth-toned color palette for MaPastry and Typography choices: Arima Madurai and Charis GIL">
+            </div>
+            <a href="https://makusa-san.github.io/iat339-p2-team3/index.html" class="style-guide-link" target="_blank">View full style guide →</a>
+ 
+        </section>
+ 
         <section class="project-section">
-            <h2 class="project-section-heading">Research & Development</h2>
-
+            <h2 class="project-section-heading">Process</h2>
+ 
             <div class="project-section-body">
                 <p>
-                    The process began with developing the brand identity. I explored how MaPastry
-                    could communicate comfort, tradition and a welcoming atmosphere through visuals.
-                    This included selecting a warm, earth-toned color palette inspired by baking and
-                    natural materials, and combining expressive and readable typography to balance personality with clarity.
+                    Before moving to code, I explored multiple directions in Figma. Early iterations focused on finding the right balance between the brand's warm, handcrafted feel and a layout that keeps the browsing experience comfortable. I tested different navigation styles, page structures, and hero layouts before deciding on a direction that let the food photography get the most attention and do the heavy lifting.
                 </p>
             </div>
-
-            <div class="project-images one">
-                <img src="img/Mapastry-ColorPalette.png" alt="Warm earth-toned color palette for MaPastry">
-            </div>
-
-            <div class="project-images one">
-                <img src="img/Mapastry-Fonts.png" alt="Typography choices: Arima Madurai and Mulish">
-            </div>
-
+ 
+            <div style="text-align: center; margin: 2.5rem auto 3rem; max-width: 75%;">
+    <img src="img/About_Us_Process.png" alt="About page exploration" style="width: 100%; border: 2px solid rgba(109, 74, 46, 0.25); border-radius: 0.35rem;">
+    <p class="mockup-caption">Four layout concepts for the About page, progressing from text-heavy to a more visual, section-based structure.</p>
+</div>
+<div style="text-align: center; margin: 2.5rem auto 3rem; max-width: 75%;">
+    <img src="img/Product_Card_Process.png" alt="Product card iterations across four versions" style="width: 100%; border: 2px solid rgba(109, 74, 46, 0.25); border-radius: 0.35rem;">
+    <p class="mockup-caption">Product card iterations exploring different arrangements of images, pricing, allergen info, and hover interactions.</p>
+</div>
+ 
             <div class="project-section-body">
                 <p>
-                    I also experimented with the landing and About Us pages, refining the elements
-                    that tell a story about MaPastry's values and the process of producing maple
-                    syrup, allowing users to better understand the concept and identity of the brand.
-                </p>
-                <p>
-                    As the project developed, I focused on structuring content and designing layouts
-                    that guide users through the website in a natural and intuitive way, ensuring
-                    that key information such as products and MaPastry's brand story is easily accessible.
+                    The menu product cards went through several rounds of iteration. I experimented with different arrangements of images, pricing, allergen info, and the Add to Cart interaction, including hover states.
                 </p>
             </div>
         </section>
-
+ 
         <section class="project-section">
             <h2 class="project-section-heading">Final Design</h2>
-
+ 
             <div class="project-section-body">
                 <p>
-                    The final outcome is a website coded with HTML and CSS that balances warmth and
-                    structure, translating a cultural concept into a clear and meaningful digital
-                    experience. I continued to refine hierarchy, spacing and interactive elements
-                    to support usability and visual consistency across all pages.
+                    The final website includes five main pages: a homepage, a menu with product cards, an About page telling MaPastry's story, a checkout page, and a Contact & Feedback page. Each product also has its own dedicated detail page. I coded everything in HTML and CSS, refining spacing, hierarchy, and interactive details like the cart and form validation to make the experience feel polished throughout.
                 </p>
             </div>
-
-            <div class="project-images two no-crop">
-                <img src="img/Mapastry-ProductListing.png" alt="MaPastry website product browsing page">
-                <img src="img/Mapastry_aboutUs.png" alt="MaPastry website About Us page">
+ 
+            <button class="toggle-mockups" id="toggleMockups" onclick="toggleFinalDesign()">
+                View all pages ↓
+            </button>
+ 
+            <div class="final-design-mockups" id="finalDesignMockups" style="display: none;">
+                <div class="mockup-wrapper-large">
+                    <div class="browser-mockup">
+                        <div class="browser-bar">
+                            <div class="browser-dot red"></div>
+                            <div class="browser-dot yellow"></div>
+                            <div class="browser-dot green"></div>
+                            <div class="browser-url">mapastry.ca</div>
+                        </div>
+                        <div class="browser-content">
+                            <img src="img/Mapastry-Full-Landing.png" alt="MaPastry Homepage full page">
+                        </div>
+                    </div>
+                    <p class="mockup-caption">Homepage — Full-screen hero with pastry photography and "Order Now" call to action, followed by a News & Updates section featuring seasonal highlights and bakery announcements.</p>
+                </div>
+ 
+                <div class="mockup-wrapper-large">
+                    <div class="browser-mockup">
+                        <div class="browser-bar">
+                            <div class="browser-dot red"></div>
+                            <div class="browser-dot yellow"></div>
+                            <div class="browser-dot green"></div>
+                            <div class="browser-url">mapastry.ca/menu</div>
+                        </div>
+                        <div class="browser-content">
+                            <img src="img/Mapastry-Full-Menu.png" alt="MaPastry Menu full page">
+                        </div>
+                    </div>
+                    <p class="mockup-caption">Menu — Full product grid with all nine maple-based desserts, each showing an image, allergen info, description, pricing, and an Add to Cart button.</p>
+                </div>
+ 
+                <div class="mockup-wrapper-large">
+                    <div class="browser-mockup">
+                        <div class="browser-bar">
+                            <div class="browser-dot red"></div>
+                            <div class="browser-dot yellow"></div>
+                            <div class="browser-dot green"></div>
+                            <div class="browser-url">mapastry.ca/product/maple-syrup-cheesecake</div>
+                        </div>
+                        <div class="browser-content">
+                            <img src="img/Mapastry-Full-Product.png" alt="MaPastry Product detail page">
+                        </div>
+                    </div>
+                    <p class="mockup-caption">Product Detail — Individual product page with image, description, allergen info, and Add to Cart. A "You Might Also Like" section recommends related items.</p>
+                </div>
+ 
+                <div class="mockup-wrapper-large">
+                    <div class="browser-mockup">
+                        <div class="browser-bar">
+                            <div class="browser-dot red"></div>
+                            <div class="browser-dot yellow"></div>
+                            <div class="browser-dot green"></div>
+                            <div class="browser-url">mapastry.ca/cart</div>
+                        </div>
+                        <div class="browser-content">
+                            <img src="img/Mapastry-Full-Checkout.png" alt="MaPastry Cart and Checkout full page">
+                        </div>
+                    </div>
+                    <p class="mockup-caption">Cart & Checkout — Order summary with product thumbnails and pricing, followed by a checkout form with address fields and payment method selection.</p>
+                </div>
+ 
+                <div class="mockup-wrapper-large">
+                    <div class="browser-mockup">
+                        <div class="browser-bar">
+                            <div class="browser-dot red"></div>
+                            <div class="browser-dot yellow"></div>
+                            <div class="browser-dot green"></div>
+                            <div class="browser-url">mapastry.ca/about</div>
+                        </div>
+                        <div class="browser-content">
+                            <img src="img/Mapastry-Full-About.png" alt="MaPastry About page full length">
+                        </div>
+                    </div>
+                    <p class="mockup-caption">About Us — The bakery's origin story, a "Why Maple?" section explaining the ingredient's heritage, a step-by-step look at maple syrup production, brand values, and a staff quote. This page brings together the brand narrative discussed in the Challenges section.</p>
+                </div>
+ 
+                <div class="mockup-wrapper-large">
+                    <div class="browser-mockup">
+                        <div class="browser-bar">
+                            <div class="browser-dot red"></div>
+                            <div class="browser-dot yellow"></div>
+                            <div class="browser-dot green"></div>
+                            <div class="browser-url">mapastry.ca/contact</div>
+                        </div>
+                        <div class="browser-content">
+                            <img src="img/Mapastry-Full-Contact.png" alt="MaPastry Contact page full length">
+                        </div>
+                    </div>
+                    <p class="mockup-caption">Contact & Feedback — Two-column layout pairing contact details and social links with a feedback form for customer input.</p>
+                </div>
             </div>
-
-            <div class="project-images two no-crop">
-                <img src="img/Mapastry-Contacts.png" alt="MaPastry contacts and feedback page">
-                <img src="img/Mapastry-Cart.png" alt="MaPastry shopping cart page">
-            </div>
+ 
+            <script>
+                function toggleFinalDesign() {
+                    const mockups = document.getElementById('finalDesignMockups');
+                    const btn = document.getElementById('toggleMockups');
+                    if (mockups.style.display === 'none') {
+                        mockups.style.display = 'flex';
+                        btn.textContent = 'Hide pages ↑';
+                    } else {
+                        mockups.style.display = 'none';
+                        btn.textContent = 'View all pages ↓';
+                    }
+                }
+            </script>
         </section>
-
+ 
         <section class="project-section">
             <h2 class="project-section-heading">Challenges</h2>
-
+ 
             <div class="project-section-body">
                 <p>
-                    One of the main challenges was translating an abstract cultural concept into
-                    a clear and engaging digital experience. While the idea of using maple syrup
-                    as a symbol of Canadian identity provided a strong foundation, it required
-                    careful design decisions to avoid relying on clichés while still communicating
-                    a recognizable theme.
+                    The About page was one of the hardest parts to figure out because there was no obvious structure to follow. I wanted it to do more than just introduce the bakery. I also wanted to show the process behind maple syrup production, so customers could understand how the core ingredient is made and how it ends up in the pastry they eat. The challenge was combining both of these aspects into one complete story.
                 </p>
                 <p>
-                    Another challenge was balancing warmth and personality with clarity and usability,
-                    particularly when combining expressive visual elements with structured layouts.
-                    Coding the final design in HTML and CSS also presented challenges in maintaining
-                    visual consistency across pages while implementing responsive and functional layouts.
+                    On the development part, I found the hero image tricky to implement without breaking the layout or distorting image. It took multiple attempts, referencing guides, and editing the image itself before it worked the way I wanted. Making the website responsive also took significant effort. For example, website’s footer has multiple elements and buttons that needed several layout adjustments to appear properly on mobile and tablet
                 </p>
             </div>
         </section>
-
+ 
         <section class="project-section">
             <h2 class="project-section-heading">Reflection</h2>
-
+ 
             <div class="project-section-body">
                 <p>
-                    Through this project, I learned how to balance visual expression with usability,
-                    especially when translating a cultural concept into a digital interface. Through
-                    exploration and iteration, I became more confident in making design decisions
-                    based on design principles rather than just aesthetics.
+                    This project taught me a lot about what a real business website actually needs. Which pages matter most? What content deserves priority? Throughout the process, I also kept asking myself: if MaPastry were a real company, what would a potential customer need to find on this website?
                 </p>
                 <p>
-                    It reinforced my understanding that thoughtful design can guide attention,
-                    communicate values, and shape how users engage with a digital product.
+                    It was also my biggest solo development project so far. Working with longer code structures taught me to write cleaner, more organized CSS, while also learning some JavaScript along the way. On the design side, I spent time building a color palette and font pairing that would not just look nice, but would help a user understand the brand’s identity just by browsing the pages.
                 </p>
                 <p>
-                    If I were to approach a similar project again, I would spend more time exploring
-                    layout variations and testing how different structures affect user experience.
-                    This would allow me to make more confident design decisions earlier in the process
-                    and create a stronger connection between the brand identity and its digital
-                    presentation.
+                    If I continue working on this project or take on something similar, I want to spend more time exploring page layouts. I am particularly interested in the main and About pages in terms of how to make a brand’s story more engaging through better storytelling and interactive elements that make the user feel part of the process.
                 </p>
-                <!-- I used Grammarly to fix mistakes and sentence structure in my initial text-->
             </div>
         </section>
     </div>

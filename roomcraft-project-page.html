@@ -21,7 +21,7 @@
 
         <nav class="main-nav">
             <a href="index.html" class="button-nav">work</a>
-            <a href="img/Resume_Maxim_Strelets.pdf" class="button-nav">resume</a>
+            <a href="img/Resume_MaximStrelets_Designed.pdf" class="button-nav">resume</a>
             <a href="about-me.html" class="button-nav">about</a>
             <a href="contacts.html" class="button-nav">contacts</a>
         </nav>
@@ -77,18 +77,6 @@
                 </p>
             </div>
 
-            <!--
-                VIDEO: Demo walkthrough of RoomCraft.
-                Place the video file as "img/RoomCraft.mp4" or update the src below.
-                If you prefer YouTube, replace the <video> with an <iframe>:
-
-                <div class="project-video">
-                    <iframe width="100%" height="450" src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-                        frameborder="0" allowfullscreen
-                        style="border-radius: 0.35rem; border: 2px solid rgba(109,74,46,0.25);">
-                    </iframe>
-                </div>
-            -->
             <div class="project-video">
                 <video controls preload="metadata" poster="img/roomcraft-poster.png">
                     <source src="img/RoomCraft.mp4" type="video/mp4">
@@ -125,41 +113,29 @@
             <div class="project-section-body">
                 <p>
                     My focus was on designing the interface that ties together a complex
-                    set of features — 2D room drawing, 3D preview, product catalog,
-                    and AI tools — into a workflow that feels approachable. The challenge
+                    set of features: 2D room drawing, 3D preview, product catalog,
+                    and AI tools into a workflow that feels approachable. The challenge
                     was keeping the UI clean while giving users access to powerful
                     functionality without overwhelming them.
                 </p>
             </div>
 
-            <!--
-                IMAGE SUGGESTION: Figma wireframes or early UI explorations.
-                Show how you structured the interface — toolbar placement,
-                panel layout, the 2D/3D toggle, etc.
-            -->
-            <div class="project-images two">
-                <img src="img/roomcraft-design-1.png" alt="Early wireframe exploration for RoomCraft interface">
-                <img src="img/roomcraft-design-2.png" alt="UI layout iteration for RoomCraft editor">
+            <div class="project-images one no-crop">
+                <img src="img/roomcraft_versions.png" alt="Three interface versions showing design evolution from earliest to latest">
             </div>
 
             <div class="project-section-body">
                 <p>
-                    I designed the bottom toolbar to group core actions — Select, Move,
-                    Rotate, AI, 2D, and 3D — in a single persistent bar, keeping the
-                    main canvas uncluttered. The product catalog lives in a collapsible
-                    side panel, and contextual controls like wall dimensions and item
-                    properties appear only when relevant.
+                    I designed the bottom toolbar to group core actions: Select, Move,
+                    Rotate, 2D, and 3D views in a single bar, keeping the
+                    main canvas together uncluttered. The product catalog, library, and Import are located in the side panel,
+                    and contextual controls like wall dimensions, room settings and item properties appear only when relevant.
                 </p>
             </div>
 
-            <!--
-                IMAGE SUGGESTION: Screenshots of the final toolbar, side panel,
-                and contextual controls. A 2-up showing the 2D view and 3D view
-                side by side would work well here.
-            -->
-            <div class="project-images two">
-                <img src="img/roomcraft-2d-view.png" alt="RoomCraft 2D editor view with room layout">
-                <img src="img/roomcraft-3d-view.png" alt="RoomCraft 3D preview with furniture placed">
+            <div class="project-images two no-crop">
+                <img src="img/roomcraft_building-room.png" alt="RoomCraft 2D room drawing interface">
+                <img src="img/roomcraft_general-interface.png" alt="RoomCraft main editor view with furniture placed">
             </div>
         </section>
 
@@ -176,31 +152,20 @@
                     3D model and metadata automatically.
                 </p>
                 <p>
-                    The 3D editor renders the room with walls, floors, and placed
-                    furniture in real time. Users can move, rotate, and arrange items
-                    with collision detection. An AI-powered "Themeify" feature lets users
-                    describe a room style in plain text and generates a matching furniture
-                    layout, while a genetic algorithm can optimize placement for the
-                    best spatial arrangement.
+                    The 3D editor renders the room with walls, floors, and placed furniture in real time. Users can move, rotate, and arrange items with collision detection.
+                    My original design for the AI feature focused on a basic product suggestion interface.
+                    During development, the team expanded this into a broader set of AI tools, including Themeify for style-based room generation and a genetic algorithm for layout optimization.
+                    The video demo showcases the full range of these features as implemented.
                 </p>
             </div>
 
-            <!--
-                IMAGE SUGGESTION: Screenshots highlighting specific features.
-                Great candidates from the video:
-                - The "Import 3D Model" dialog with the IKEA URL
-                - The "Themeify a room" dialog with the prompt and options
-                - The genetic algorithm finding the best layout
-                - The product catalog sidebar with furniture thumbnails
+            <div class="project-images one no-crop">
+                <img src="img/roomcraft_menu.png" alt="RoomCraft mode selection screen — single room or full floor plan">
+            </div>
 
-                A 2x2 grid (class="four") would work well to showcase
-                multiple features at once.
-            -->
-            <div class="project-images four">
-                <img src="img/roomcraft-import.png" alt="Import 3D Model dialog with product URL input">
-                <img src="img/roomcraft-themeify.png" alt="Themeify dialog for AI-generated room styling">
-                <img src="img/roomcraft-catalog.png" alt="Product catalog sidebar with furniture items">
-                <img src="img/roomcraft-genetic.png" alt="Genetic algorithm optimizing furniture layout">
+            <div class="project-images two no-crop">
+                <img src="img/roomcraft_ai-advice.png" alt="AI advice feature providing layout suggestions">
+                <img src="img/roomcraft_shoppinglist.png" alt="Shopping list showing placed furniture with retailer links">
             </div>
         </section>
 
@@ -225,16 +190,6 @@
                     through Vertex AI.
                 </p>
             </div>
-
-            <!--
-                IMAGE SUGGESTION (optional): A Figma screenshot showing your
-                design file — component library, screen flows, etc.
-                Use class="one" for a single centered image.
-
-                <div class="project-images one">
-                    <img src="img/roomcraft-figma.png" alt="Figma design file for RoomCraft">
-                </div>
-            -->
         </section>
 
 
@@ -259,6 +214,10 @@
                     refine the onboarding experience and explore mobile responsiveness
                     for the editor.
                 </p>
+            </div>
+
+            <div class="project-images one no-crop">
+                <img src="img/Surge_Certificate.png" alt="SFU StormForge Certificate Award">
             </div>
         </section>
 

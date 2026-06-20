@@ -98,7 +98,7 @@
                     aimed at professionals, or lack the ability to work with real products.
                 </p>
                 <p>
-                    RoomCraft was built to bridge that gap — giving everyday users a way
+                    RoomCraft was built to bridge that gap, giving everyday users a way
                     to quickly sketch their room, drop in real furniture from retailers
                     like IKEA, and see the result in 3D, all within the browser.
                 </p>
@@ -108,25 +108,27 @@
 
         <!-- DESIGN PROCESS -->
         <section class="project-section">
-            <h2 class="project-section-heading">Design Process</h2>
+            <h2 class="project-section-heading">Design Process & Challenges</h2>
 
             <div class="project-section-body">
                 <p>
                     My focus was on designing the interface that ties together a complex set of features: 2D room drawing, 3D preview, a product catalog, and AI tools, into a workflow that feels approachable rather than overwhelming. The challenge was keeping the interface clean while still giving users access to powerful functionality, without burying that functionality so deeply that it became hard to find.
                 </p>
+                <div class="project-images one no-crop">
+                    <img src="img/roomcraft_versions.png" alt="Three interface versions showing design evolution from earliest to latest">
+                </div>
+                <p class="mockup-caption">The interface went through several rounds of visual and layout refinement over the course of the project, from early concept to final design</p>
                 <p>
                     To do this, I grouped core actions like Select, Move, Rotate, and switching between 2D and 3D views into a single toolbar, so the main canvas could stay uncluttered. The product catalog, library, and import tools live in a side panel, and contextual controls such as wall dimensions, room settings, and item properties only appear when they are relevant, rather than competing for attention all the time.
                 </p>
                 <p>
-                    A real challenge throughout the project was that the product kept changing underneath the design. As new AI features were integrated later in development, including an expanded style based room generator and a layout optimization tool, I had to rework layouts, redesign elements that turned out not to be technically feasible, and build new UI on the fly for functionality that did not exist when the original mockups were made. Staying in close communication with the development team was essential here, since the only way to keep the interface coherent was to keep checking in as new changes came through.
+                   A real challenge was fitting all of these functions together without overwhelming the user or making the interface cognitively heavy. My second iteration struggled with this: too many elements competed for attention at once. I had to rethink which functions could be tucked into menus versus surfaced directly, how to group related actions based on how someone would actually move through the tool, and how to visually distinguish default catalogue items from furniture a user imported themselves. I also had to design for edge cases, like how the interface should communicate when an import failed to load, so the experience stayed clear even when something went wrong.
                 <p>
-                    To check whether the interface actually made sense to someone outside the project, I ran informal usability sessions, showing the design to people unfamiliar with RoomCraft and watching how they navigated it without any guidance from me. Those sessions surfaced real points of confusion, particularly around the toolbar and the transition between 2D and 3D views, and that feedback directly shaped how I grouped actions and simplified those transitions in the final design.
+                   To check whether the interface actually made sense to someone outside the project, I showed an interactive Figma prototype to people unfamiliar with RoomCraft and watched how they tried to use it without any guidance from me. The sessions revealed that they did not know where to start, some buttons were unclear, and certain furniture categories were hard to find. The interface did not yet feel like a coherent system, with functions that felt scattered rather than organized around how someone would actually use the tool. That feedback directly shaped the toolbar and panel structure described above, as well as a shift toward a calmer, lighter visual style, since testers also responded poorly to the darker, more dramatic look of the early concept.
                 </p>
             </div>
 
-            <div class="project-images one no-crop">
-                <img src="img/roomcraft_versions.png" alt="Three interface versions showing design evolution from earliest to latest">
-            </div>
+            
 
             <div class="project-section-body">
                 <p>
@@ -139,6 +141,7 @@
 
             <div class="project-images two no-crop">
                 <img src="img/roomcraft_building-room.png" alt="RoomCraft 2D room drawing interface">
+                <p class="mockup-caption">These screenshots reflect my high-fidelity Figma designs. Within the hackathon timeline, the development team fully implemented the core layout and functionality, though some visual styling differs in the final build</p>
                 <img src="img/roomcraft_general-interface.png" alt="RoomCraft main editor view with furniture placed">
             </div>
         </section>
